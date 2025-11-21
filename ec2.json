@@ -9,9 +9,9 @@
                 "InstanceType": "t3.micro",
                 "ImageId": "ami-0abac8735a38475db",
                 "AvailabilityZone": "ca-central-1a",
-                "SecurityGroupIds": ["polystudent-sg"],
-                "SubnetId": "subnet-0fb4813dbdd17b80c",
-                "IamInstanceProfile": "LabRole",
+                "SecurityGroupIds": ["sg-06ebd00a91bd21e63"],
+                "SubnetId": "subnet-03d75168ecc5691fb",
+                "IamInstanceProfile": "LabInstanceProfile",
                 "BlockDeviceMappings": [
                     {
                         "DeviceName": "/dev/sda1",
