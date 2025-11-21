@@ -239,6 +239,15 @@ Resources:
           ToPort: 1514
           CidrIp: 0.0.0.0/0
 
+  FlowLogDeliveringToS3:
+    Type: AWS::EC2::FlowLog
+    Properties: 
+      ResourceId: !Ref VPC
+      ResourceType: VPC
+      TrafficType: REJECT
+      LogDestination: arn:aws:s3:::polystudents352-460783431840
+      LogDestinationType: s3
+
 Outputs:
   VPC:
     Description: A reference to the created VPC
