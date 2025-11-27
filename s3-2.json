@@ -27,6 +27,17 @@
                 },
                 "VersioningConfiguration": {
                     "Status": "Enabled"
+                },
+                "ReplicationConfiguration": {
+                    "Role": "arn:aws:iam::460783431840:role/LabRole",
+                    "Rules": [
+                        {
+                            "Destination" : {
+                                "Bucket" : "arn:aws:s3:::polystudents352-460783431840-back",
+                            },
+                            "Status" : "Enabled"
+                        }
+                    ]
                 }
             }
         }
